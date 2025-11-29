@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Lavish<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">☰</button>
+        <video autoplay loop muted id="video-background">
+            <source src="image/background.mp4" type="video/mp4">Your browser does not support the video tag.
+        </video>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="Hero">
+        <div class="hero-content">
+            <p class="intro-text">Welcome to my Digital Space</p>
+            <h1>
+                Hi, I'm <span class="accent-text">Lavish Dhaubhadel</span>,<br>
+                a Web Developer.
+            </h1>
+            <p class="description-text">
+                I turn ideas into websites that are simple, beautiful, and a joy to use. Let’s build something incredible together.
+            </p>
+            <a href="#Contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="About" id="About">
+        <h2>About Me</h2>
+        <div class="About-content">
+            <img src="image/me.jpg" class="profile-img">
+            <div class="about-text">
+                <p>Hello! I'm Lavish Dhaubhadel, a web developer passionate about building beautiful and functional websites that are both beautiful and easy to use</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Projects Section -->
+    <section class="Projects" id="Projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img 
+                    src="image/blooms.png" alt="Blooms E-Commerce Site">
+                <h3>Project Blooms (E-Commerce)</h3>
+                <p>E-Commerce platform for flowershop</p>
+            </div>
+
+            <div class="project-card">
+                <img 
+                    src="image/ahs.png"alt="AHS Dashboard">
+                <h3>Project AHS</h3>
+                <p>A basic webpage for college</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="Contact" id="Contact">
+        <h2>Contact Me</h2>
+
+        <form id="contact-form">
+            <input type="text" id="name" name="name" required placeholder="Your Name" class="form-input">
+            <input type="email" id="email" name="email" required placeholder="Your Email" class="form-input">
+            <textarea id="description" name="description" placeholder="How can I help you?" class="form-textarea"></textarea>
+
+            <button type="submit" class="submit-button">Send Message</button>
+            <p id="form-message" class="form-message-text"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Lavish Dhaubhadel | All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
