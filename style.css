@@ -140,7 +140,7 @@ section h2 {
     line-height: 1.2;
     margin-bottom: 1.5rem;
     color: var(--text-light);
-    white-space: nowrap; /* Prevent line break */
+    white-space: nowrap; 
 }
 
 .accent-text {
