@@ -7,7 +7,7 @@ navLinks.classList.toggle('open');
 
 const isExpanded = navLinks.classList.contains('open');
 menuButton.setAttribute('aria-expanded', isExpanded);
-menuButton.innerHTML = isExpanded ? '✕' : '☰'; // X vs Hamburger
+menuButton.innerHTML = isExpanded ? '✕' : '☰'; 
 }
 
 //submission handling
